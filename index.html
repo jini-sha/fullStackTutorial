@@ -4,34 +4,52 @@
 	<meta name="viewport">
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<link rel="stylesheet" href="Portfolio-Jinisha/css/style.css">
+	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
+	<header id="hero">
+		<nav class="navbar">
+			<ul class="nav-links">
 				<li><a href="#home">Home</a></li>
       			<li><a href="#projects">About</a></li>
      			<li><a href="#form">Contact Me!</a></li>
 			</ul>
+
+			<button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">☰</button>
+</nav>
+
 		</nav>
 	</header>
 
 <main>
 	<section id=main>
 		<article id="intro">
-		<h3>Hey, I'm Jinisha!</h3>
+			  <section class="video-section">
+    <video id="bg-video" autoplay loop muted>
+      <source src="https://www.pexels.com/download/video/853750/" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+    	<h3>Hey, I'm Jinisha!</h3>
 		<h1>Backend Developer</h1>
 		<p>Im a a backend developer specializing in creating robust, scalable, and efficient server-side logic and APIs. Take a look at my projects to see how I turn ideas into functional reality.</p>
 		<div id="buttons">
 			<button><a href="#form">Get in Touch</a></button>
 			<button><a href="#projects">Browse Projects</a></button>
 		</div>
-	</article>
+		<button id="toggle-video">Play Video</button>
+		</article>
 	<aside>
 		<img src="https://cdn.vectorstock.com/i/500p/46/78/gray-female-head-placeholder-vector-23804678.jpg">
+
 			</aside>
+    </div>
+    
+  </section>
+
+		
+	
 
 	</section>
 	<section id="projects">
@@ -61,26 +79,28 @@
         </article>
     </section>
 	<section  id="form">
-		<form>
+		<form id="contact-form">
 			<h2>Contact Me!</h2>
 			<label for ="Name">Name: </label>
-				<input type="text" name="Name" required>
+				<input type="text" name="Name" id="name" required>
 			
 				<label for ="Number">Number:</label>
-				<input type="number" name="Number">
+				<input type="number" id="number" name="Number">
 				
 				<label for ="Email">Email:</label>
-				<input type="email" name="email" required>
+				<input type="email" id="email" name="email" required>
 			
 				<label for ="Message">Message:</label>
-				<textarea name="message"></textarea>
+				<textarea name="message" id="message"></textarea>
 				<button type="submit" >Send</button>
+				<h1 id="form-message" style='display:none '>Message here</h1>
 		</form>
 	</section>
 	<footer id="footer">
       			<p>All rights reserved @2025</p>
       		</footer>
       	</main>
+      	<script src="script.js"></script>
       </body>
       </html>
 
