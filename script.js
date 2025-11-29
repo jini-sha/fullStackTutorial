@@ -31,7 +31,7 @@ menuButton.addEventListener('click', toggleMenu);
 navLinks.querySelectorAll('a').forEach(link => {
 link.addEventListener('click', () => {
 if (navLinks.classList.contains('open')) {
-toggleMenu(); // Closes the menu
+toggleMenu();
 }
 });
 });
