@@ -1,0 +1,86 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:Garamond;
+}
+h1{
+	padding:12px;
+	text-align: center;
+	margin:2rem;
+	font-size: 3rem;
+
+}
+#add-movie-form{
+	background-color: lightpink;
+	padding:3rem 1rem 3rem 1rem;
+	display:flex;
+	flex-direction: column;
+	gap:20px;
+	align-items: center;
+	width:70%;
+
+}
+.fields{
+	padding:7px;
+	width:60%;
+	height:3rem;
+	border-radius: 7px;
+}
+h3{
+	margin:0.5rem;
+	text-align: center;
+	font-size: 1.5rem;
+}
+h2{
+	margin-top: 1rem;
+	width:fit-content;
+	padding:12px;
+	border-radius: 7px;
+	margin-left: 1rem;
+	color:darkred;
+	font-size: 2rem;
+}
+button[type=submit]{
+	padding: 10px;
+	width:25%;
+	height:3rem;
+	border-radius: 7px;
+	background-color: whitesmoke;
+	font-weight:900;
+}
+#search-input{
+	padding:0.7rem 12px 0.7rem 12px;
+	width:70%;
+	margin:1rem;
+	border-radius: 7px;
+}
+#movie-list{
+	padding:12px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap:10px;
+}
+#form{
+	display: flex;
+	justify-content: center;
+}
+button{
+	padding:5px;
+	background-color: lightpink;
+	border-radius: 7px;
+	margin-top: 1rem;
+}
+#seperation{
+	margin-top: 1.5rem;
+}
+#movies{
+	width:70%;
+	margin: 0 auto;
+}
+.movie-item{
+	padding:2rem;
+	border:1px dotted pink;
+	gap:1rem;
+	background-color: whitesmoke;
+}
